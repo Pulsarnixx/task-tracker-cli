@@ -12,6 +12,7 @@ The project was written with the aim of developing skills in Python and learning
 | **venv** | Virtual environment for dependency isolation |
 | **pydoc** | Built-in documentation generator |
 | **pdb** | Python Debugger |
+| **mypy** | Static typing for Python |
 
 ## Requirements
 

@@ -17,8 +17,8 @@ class Task:
         self._id: int = id
         self._description:str = description
         self._status: str = status
-        self._createdAt: datetime = datetime.datetime.now()
-        self._updatedAt: datetime = self._createdAt
+        self._createdAt: datetime.datetime = datetime.datetime.now()
+        self._updatedAt: datetime.datetime  = self._createdAt
 
     """Setters"""
 
@@ -28,20 +28,11 @@ class Task:
     def setStatus(self, status: str) -> None:
         self._status = status
 
-    def setUpdateDateAndTime(self, updatedAt: datetime) -> None:
+    def setUpdateDateAndTime(self, updatedAt: datetime.datetime ) -> None:
         self._updatedAt = updatedAt
     
     """Getters"""
 
-    def getStatus(self) -> str:
-        return self._status
-    
-    def getCreationDateAndTime(self) -> datetime:
-        return self._createdAt
-    
-    def getUpdateDateAndTime(self) -> datetime:
-        return self._updatedAt
-    
     def getId(self) -> int:
         return self._id
     
@@ -51,10 +42,10 @@ class Task:
     def getStatus(self) -> str:
         return self._status
     
-    def getCreationDateAndTime(self) -> datetime:
+    def getCreationDateAndTime(self) -> datetime.datetime :
         return self._createdAt
     
-    def getUpdateDateAndTime(self) -> datetime:
+    def getUpdateDateAndTime(self) -> datetime.datetime :
         return self._updatedAt
     
     """Methods"""
